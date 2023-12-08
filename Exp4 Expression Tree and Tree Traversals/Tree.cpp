@@ -69,7 +69,7 @@ node *create_post(char postfix[10])
 {
 	node *p;
 	stack s;
-	for (int i = 0; postfix[i] != '\0'; i++)
+	for (int i = 0; postfix[i] != '\0'; i++) //-->ab*c/
 	{
 		char token = postfix[i];
 		if (isalnum(token))
@@ -92,7 +92,7 @@ node *create_post(char postfix[10])
 	return s.pop();
 }
 
-node *create_pre(char prefix[10])
+node *create_pre(char prefix[10])//*a/bc
 {
 	node *p;
 	stack s;
