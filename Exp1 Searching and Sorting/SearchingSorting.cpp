@@ -14,12 +14,12 @@ e) Search a particular student according to name using binary search
 #include <iostream>
 #include <string.h>
 using namespace std;
-typedef struct student
+struct stud
 {
     int roll_num;
     char name[20];
     float marks;
-} stud;
+} ;
 
 void create(stud s[20], int n);
 void display(stud s[20], int n);
